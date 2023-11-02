@@ -9,12 +9,16 @@
     <form method="POST">
         {% csrf_token %}
         <div class="form-group">
-            <label for="name">ชื่อประชากร</label>
-            <input type="text" name="name" class="form-control" value="{{person.name}}">
+            <label for="username">ชื่อลูกค้า</label>
+            <input type="text" name="username" class="form-control" value="{{customer.username}}">
+        </div>
+        <div class="form-group">
+            <label for="address">ที่อยู่</label>
+            <input type="text" name="address" class="form-control" value="{{customer.address}}">
         </div>
         <div class="form-group mb-3">
-            <label for="age">อายุ</label>
-            <input type="number" name="age" class="form-control" value="{{person.age}}">
+            <label for="tel_number">เบอร์ติดต่อ</label>
+            <input type="number" name="tel_number" class="form-control" value="{{customer.tel_number}}">
         </div>
         <input type="submit" value="อัพข้อมูล" class="btn btn-success">    
     </form>
