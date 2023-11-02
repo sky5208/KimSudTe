@@ -5,6 +5,8 @@ urlpatterns = [
     path('',views.index, name='index'),
     path('about',views.about),
     path('form',views.form),
-    path('edit/<person_id>',views.edit),
-    path('delete/<person_id>',views.delete)
+    path('edit/<customer_code>',views.edit),
+    path('delete/<customer_code>',views.delete),
+    path('customer',views.customer),
+    
 ]
